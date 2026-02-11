@@ -1,0 +1,40 @@
+Write a program to read and display elements of a one-dimensional array.
+
+#include<stdio.h>
+int main()
+{
+int n,i;
+intarr[5];
+printf("Enter the number of elements in the array: ");
+scanf("%d",&n);
+int arr[n];
+printf("Enter %d elements:\n", n);
+for (i = 0; i < n; i++)
+{
+printf("Element %d: ", i + 1);
+scanf("%d",&arr[i]);
+}
+printf("The elements of the array are:\n");
+for (i = 0; i < n; i++)
+{
+printf("Element %d: %d\n", i + 1, arr[i]);
+}
+getch();
+return 0;
+}
+
+Output:
+
+Enter the number of elements in the array: 5
+Enter 5 elements:
+Element 1: 1
+Element 2: 4
+Element 3: 3
+Element 4: 2
+Element 5: 5
+The elements of the array are:
+Element 1: 1
+Element 2: 4
+Element 3: 3
+Element 4: 2
+Element 5: 5
