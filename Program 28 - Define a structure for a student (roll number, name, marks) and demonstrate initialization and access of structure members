@@ -1,0 +1,45 @@
+Write a C program to define a structure for a student (roll number, name, marks) and demonstrate initialization and access of structure members.
+
+#include<stdio.h>
+#include<string.h>
+struct student
+{
+int roll_number;
+char name[50];
+float marks;
+};
+int main()
+{
+struct student s1 = {101,"John Doe", 85.5};
+struct student s2;
+printf("Enter roll number for student 2: ");
+scanf("%d",&s2.roll_number);
+printf("Enter name for student 2: ");
+scanf("%s",s2.name);
+printf("Enter marks for student 2: ");
+scanf("%f",&s2.marks);
+printf("\nStudent 1 Details:\n");
+printf("Roll Number: %d\n", s1.roll_number);
+printf("Name: %s\n", s1.name);
+printf("Marks: %.2f\n", s1.marks);
+printf("\nStudent 2 Details:\n");
+printf("Roll Number: %d\n", s2.roll_number);
+printf("Name: %s\n", s2.name);
+printf("Marks: %.2f\n", s2.marks);
+getch();
+return 0;
+}
+
+Output:
+
+Enter roll number for student 2: 3
+Enter name for student 2: ABC
+Enter marks for student 2: 56
+Student 1 Details:
+Roll Number: 101
+Name: John Doe
+Marks: 85.50
+Student 2 Details:
+Roll Number: 3
+Name: ABC
+Marks: 56.00
