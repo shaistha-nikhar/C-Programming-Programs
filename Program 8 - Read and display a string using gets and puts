@@ -1,0 +1,19 @@
+Write a program to read and display a string using gets and puts.
+
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+char str[100];
+clrscr();
+printf("Please enter a string: ");
+gets(str)
+printf("You entered:”);
+puts(str);
+return 0;
+}
+
+Output:
+
+Please enter a string: Ballari
+You entered: Ballari
