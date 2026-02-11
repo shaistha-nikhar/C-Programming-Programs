@@ -1,0 +1,52 @@
+Write a program to demonstrate the use of different control string and escape sequences in printf and scanf.
+
+#include<stdio.h>
+int main()
+{
+char name[50];
+int age;
+float height;
+clrscr();
+printf("Welcome to the C Programming Demo!\n");
+printf("=====================================\n");
+printf("Please enter your name: ");
+scanf("%s", name); 
+printf("Enter your age: ");
+scanf("%d",&age);
+printf("Enter your height in meters (e.g., 1.75): ");
+scanf("%f",&height);
+printf("\nHello, %s!\n", name);
+printf("You are %d years old.\n", age);
+printf("Your height is %.2f meters.\n", height);
+printf("\nSummary:\n");
+printf("=========\n");
+printf("Name: %s\n", name);
+printf("Age: %d\n", age);
+printf("Height: %.2f meters\n", height);
+printf("this is \t tab space\n");
+printf("this is alert \a sound");
+printf("Thank you for participating!\n");
+printf("Goodbye!\n");
+getch();
+return 0;
+}
+
+Output:
+
+Welcome to the C Programming Demo!
+=====================================
+Please enter your name: Raju
+Enter your age: 32
+Enter your height in meters (e.g., 1.75): 5.4
+Hello, Raju!
+You are 32 years old.
+Your height is 5.40 meters.
+Summary:
+=========
+Name: Raju
+Age: 32
+Height: 5.40 meters
+this is tab space
+this is alert sound
+Thank you for participating!
+Goodbye!
