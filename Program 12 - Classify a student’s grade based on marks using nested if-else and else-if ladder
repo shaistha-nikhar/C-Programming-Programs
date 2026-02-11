@@ -1,0 +1,24 @@
+Write a program to classify a student’s grade based on marks using nested if-else and else-if ladder.
+
+#include<stdio.h>
+int main()
+{
+int marks;
+printf("Enter the student's marks (0 to 100): ");
+scanf("%d",&marks);
+if (marks < 0 || marks > 100)
+printf("Invalid marks! Please enter marks between 0 and 100.\n");
+else if (marks >= 70)
+printf("Distinction\n");
+else if (marks >=60 && marks<70)
+printf("First Class\n");
+else if (marks >= 40 && marks<60)
+printf("Second Class\n");
+else
+printf("Fail\n");
+return 0;
+}
+
+Output:
+
+Enter the student's marks (0 to 100): 80 Distinction
