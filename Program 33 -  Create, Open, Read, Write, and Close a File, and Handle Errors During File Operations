@@ -1,0 +1,45 @@
+Write a C Program to Create, Open, Read, Write, and Close a File, and Handle Errors During File Operations
+
+#include<stdio.h>
+void main()
+{
+FILE *file;
+char filename[] ="example.txt"; 
+char writeData[] ="Hello, this is a test file.\n"; 
+char readData[100]; 
+file = fopen(filename,"w");
+if (file == NULL)
+{
+perror("Error opening file for writing");
+return 1;
+}
+if (fputs(writeData, file) == EOF)
+{
+perror("Error writing to file");
+fclose(file);
+return 1;
+}
+fclose(file);
+file = fopen(filename,"r");
+if (file == NULL)
+{
+perror("Error opening file for reading");
+return 1;
+}
+printf("Data read from the file:\n");
+while (fgets(readData, sizeof(readData), file) != NULL)
+{
+printf("%s", readData);
+}
+if (ferror(file))
+{
+perror("Error reading from file");
+}
+fclose(file);
+printf(“close the file after reading”);
+getch();
+}
+
+Output:
+
+Data read from the file: Hi, this is a test file
