@@ -1,0 +1,17 @@
+Write a program to display a message using a function without parameters and return type.
+
+#include<stdio.h>
+void display()
+{
+printf("Hello, welcome to the BBC college!\n");
+}
+int main()
+{
+display();
+getch();
+return 0;
+}
+
+Output:
+
+Hello, welcome to the BBC college!
