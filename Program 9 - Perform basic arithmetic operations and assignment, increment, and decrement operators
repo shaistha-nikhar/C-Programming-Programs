@@ -1,0 +1,38 @@
+Write a program to perform basic arithmetic operations (+,-,*,/,%) and assignment, increment, and decrement operators.
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a,b,c,d,e,f,g;
+clrscr();
+printf("enter the values of a and b\n");
+scanf("%d%d",&a,&b);
+c=a+b; .
+d=a-b;
+e=a*b;
+f=a/b;
+g=a%b;
+printf("The sum of two numbers is:%d\n",c);
+printf("The subtraction of two numbers is:%d\n",d);
+printf("The multiplication of two numbers is:%d\n",e);
+printf("The division of two numbers is:%d\n",f);
+printf("The modulus of two numbers is:%d\n",g);
+a++;
+printf(" After increment the value of a is :%d\n",a);
+b--;
+printf(" After decrement the value of b is :%d\n",b);
+getch();
+}
+
+Output:
+
+Enter the values of a and b
+6 4
+The sum of two numbers is: 10
+The subtraction of two numbers is: 2
+The multiplication of two numbers is: 24
+The division of two numbers is: 1
+The modulus of two numbers is: 2
+After increment the value of a is: 7
+After decrement the value of b is : 3
