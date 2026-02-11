@@ -1,0 +1,26 @@
+Write a program to define and use symbolic constants.
+
+#include<stdio.h>
+#include<conio.h>
+#define PI 3.14159 
+#define MAX_SIZE 100
+const int MIN_SIZE = 1;
+int main()
+{
+double radius = 5.0;
+double area;
+clrscr();
+area = PI * radius * radius;
+printf("Radius: %.2f\n", radius);
+printf("Area of the circle: %.2f\n", area);
+printf("Max size: %d\n", MAX_SIZE);
+printf("Min size: %d\n", MIN_SIZE);
+return 0;
+}
+
+Output:
+
+Radius: 5.00
+Area of the circle: 78.54
+Max size: 100
+Min size: 1
