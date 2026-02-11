@@ -1,0 +1,24 @@
+Write a program to declare and initialize pointers and access the value and address of variables using pointers.
+
+#include<stdio.h>
+void main()
+{
+int *p;
+int var=10;
+clrscr();
+p=&var;
+printf(“value of variable var is:%d\n”,var);
+printf(“\n value of variable var is:%d”,*p);
+printf(“\n address of variable varis:%p”,&var);
+printf(“\n address of variable var is:%p”,p);
+printf(“\n address of pointer p is:%p”,&p);
+getch();
+}
+
+Output:
+
+value of variable var is:10
+value of variable var is:10
+address of variable varis:FFF2
+address of variable var is:FFF2
+address of pointer p is:FFF4
