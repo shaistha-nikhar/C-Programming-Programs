@@ -1,0 +1,46 @@
+Write a program to perform pointer arithmetic (increment, decrement, addition, subtraction).
+
+#include<stdio.h>
+int main()
+int*ptr1,*ptr2;
+{
+int arr[] = {10, 20, 30, 40, 50};
+int *ptr = arr;
+printf("Pointer Increment:\n");
+printf("Initial value of ptr: %d\n",*ptr); 
+ptr++; 
+printf("After incrementing, ptr points to: %d\n",*ptr);
+printf("\nPointer Decrement:\n");
+ptr--; 
+printf("After decrementing, ptr points to: %d\n",*ptr);
+printf("\nPointer Addition:\n");
+ptr = arr; 
+printf("Initial value of ptr: %d\n",*ptr);
+ptr = ptr + 3; 
+printf("After adding 3, ptr points to: %d\n",*ptr);
+printf("\nPointer Subtraction:\n");
+ptr = ptr - 2; 
+printf("After subtracting 2, ptr points to: %d\n",*ptr); 
+printf("\nPointer Subtraction between two pointers:\n");
+ptr1 = arr; 
+ptr2 = arr + 4; 
+printf("Difference between ptr2 and ptr1: %ld\n", ptr2 - ptr1);
+printf("Difference between ptr2 and ptr1: %ld\n", ptr2 - ptr1);
+getch();
+return 0;
+}
+
+Output:
+
+Pointer Increment:
+Initial value of ptr: 10
+After incrementing, ptr points to: 20
+Pointer Decrement:
+After decrementing, ptr points to: 10
+Pointer Addition:
+Initial value of ptr: 10
+After adding 3, ptr points to: 40
+Pointer Subtraction:
+After subtracting 2, ptr points to: 20
+Pointer Subtraction between two pointers:
+Difference between ptr2 and ptr1: 4
