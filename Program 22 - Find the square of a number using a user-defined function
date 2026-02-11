@@ -1,0 +1,21 @@
+Write a program to find the square of a number using a user-defined function.
+
+#include<stdio.h>
+int square(int num)
+{
+return num * num;
+}
+int main()
+{
+int number, result;
+printf("Enter a number: ");
+scanf("%d",&number);
+result = square(number);
+printf("The square of %d is %d\n", number, result);
+return 0;
+}
+
+Output:
+
+Enter a number: 4
+The square of 4 is 16
