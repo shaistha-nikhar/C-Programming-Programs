@@ -1,0 +1,24 @@
+Write a program to demonstrate the use of keywords, identifiers,constants, and variables.
+
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+int a, b; 
+const float divisor= 3.0; 
+float sum, average; 
+clrscr();
+printf("Enter two integers: ");
+scanf("%d %d",&a,&b); 
+sum = a+b; 
+average = sum / divisor;
+printf("Sum: %d\n", (int) sum);
+printf("Average: %.2f\n", average);
+return 0; 
+}
+
+Output:
+
+Enter two integers: 5 10
+Sum: 15
+Average: 5.0
