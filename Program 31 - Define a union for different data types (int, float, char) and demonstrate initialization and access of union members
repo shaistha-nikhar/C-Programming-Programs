@@ -1,0 +1,27 @@
+Write a C program to define a union for different data types (int, float, char) and demonstrate initialization and access of union members.
+
+#include<stdio.h>
+{
+int i;
+float f;
+char c;
+};
+int main()
+{
+union Data data;
+data.i = 10;
+printf("Data as integer: %d\n", data.i);
+printf("Data as float: %.2f\n", data.f);
+data.c ='A';
+printf("Data as char: %c\n", data.c);
+printf("Final value stored in the union (char): %c\n", data.c);
+getch();
+return 0;
+}
+
+Output:
+
+Data as integer: 10
+Data as float: 3.14
+Data as char: A
+Final value stored in the union (char): A
