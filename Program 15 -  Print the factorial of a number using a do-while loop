@@ -1,0 +1,24 @@
+Write a program to print the factorial of a number using a do-while loop.
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int n,i=1,f=1;
+clrscr();
+printf("\n Enter The Number:");
+scanf("%d",&n);
+do
+{
+f=f*i;
+i++;
+}
+while(i<=n);
+printf("\n The Factorial of %d is %d",n,f);
+getch();
+}
+
+Output:
+
+Enter The Number:5
+The Factorial of 5 is 120
